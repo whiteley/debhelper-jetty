@@ -1,0 +1,3 @@
+/etc/jetty /usr/share/jetty/etc
+/var/lib/jetty/webapps /usr/share/jetty/webapps
+/var/log/jetty /usr/share/jetty/logs

@@ -1,0 +1,13 @@
+Source: jetty
+Section: java
+Priority: optional
+Maintainer: Jetty Project
+
+Package: jetty
+Architecture: all
+Description: Core Jetty 9.0.5.v20130815 Distribution
+ Jetty provides an Web server and javax.servlet
+ container, plus support for Web Sockets, OSGi, JMX, JNDI,
+ JASPI, AJP and many other integrations. These components are
+ open source and available for commercial use and
+ distribution.

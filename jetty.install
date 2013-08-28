@@ -1,0 +1,9 @@
+etc/* /etc/jetty
+*.html /usr/share/doc/jetty
+lib /usr/share/jetty
+resources /usr/share/jetty
+start.d /usr/share/jetty
+start.ini /usr/share/jetty
+start.jar /usr/share/jetty
+*.txt /usr/share/doc/jetty
+webapps /var/lib/jetty

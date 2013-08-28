@@ -1,0 +1,44 @@
+#!/bin/sh
+set -e
+
+# Automatically added by dh_installinit
+if [ "$1" = "purge" ] ; then
+	update-rc.d jetty remove >/dev/null
+fi
+# End automatically added section
+
+# Remove cached files
+rm -rf /var/cache/jetty/*
+
+case "$1" in
+    remove)
+        if [ -d "/var/lib/jetty" ] ; then
+            rmdir --ignore-fail-on-non-empty \
+                /var/lib/jetty/webapps \
+                /var/lib/jetty || true
+        fi
+        if [ -d "/var/cache/jetty" ] ; then
+            rm -rf /var/cache/jetty
+        fi
+    ;;
+
+    purge)
+        # Remove user/group and log files (don't remove everything under
+        # /var/lib/jetty because there might be user-installed webapps)
+        deluser jetty || true
+        rm -rf /var/log/jetty
+        if [ -d "/var/lib/jetty" ] ; then
+            rmdir --ignore-fail-on-non-empty \
+                /var/lib/jetty/webapps \
+                /var/lib/jetty || true
+        fi
+    ;;
+
+    remove|upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)
+    ;;
+
+    *)
+        echo "$0 called with unknown argument \`$1'" >&2
+        exit 1
+    ;;
+esac
