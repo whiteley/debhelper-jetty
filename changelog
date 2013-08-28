@@ -1,5 +1,5 @@
-jetty (9.0.5.v20130815) UNRELEASED; urgency=low
+jetty (9.0.5.v20130815) precise; urgency=low
 
-  * Initial release. (Closes: #XXXXXX)
+  * Initial release.
 
- -- Ubuntu <ubuntu@ip-10-39-61-16.eu-west-1.compute.internal>  Wed, 28 Aug 2013 13:55:02 +0000
+ -- Matt Whiteley <mwhiteley@engineyard.com>  Wed, 28 Aug 2013 13:55:02 +0000

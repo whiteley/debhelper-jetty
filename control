@@ -1,7 +1,7 @@
 Source: jetty
 Section: java
 Priority: optional
-Maintainer: Jetty Project
+Maintainer: Engine Yard, Inc. (Packaging) <packaging@engineyard.com>
 
 Package: jetty
 Architecture: all
