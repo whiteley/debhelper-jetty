@@ -2,9 +2,11 @@ Source: jetty
 Section: java
 Priority: optional
 Maintainer: Engine Yard, Inc. (Packaging) <packaging@engineyard.com>
+Build-Depends: debhelper (>= 9)
 
 Package: jetty
 Architecture: all
+Depends: ${misc:Depends}, java7-runtime-headless
 Description: Core Jetty 9.0.5.v20130815 Distribution
  Jetty provides an Web server and javax.servlet
  container, plus support for Web Sockets, OSGi, JMX, JNDI,

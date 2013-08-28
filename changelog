@@ -1,3 +1,9 @@
+jetty (9.0.5.v20130815-1) precise; urgency=low
+
+  * Add Build-Depends and Depends.
+
+ -- Matt Whiteley <mwhiteley@engineyard.com>  Wed, 28 Aug 2013 10:27:27 -0700
+
 jetty (9.0.5.v20130815) precise; urgency=low
 
   * Initial release.
