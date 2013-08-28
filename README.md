@@ -6,7 +6,7 @@ Debhelper packaging files for binary Jetty distribution.
 * Download and rename [jetty-distribution](http://download.eclipse.org/jetty/stable-9/dist/) tarball
 
 ```
-jetty-distribution-9.0.5.v20130815.tar.gz jetty_9.0.5.v20130815.orig.tar.gz
+mv jetty-distribution-9.0.5.v20130815.tar.gz jetty_9.0.5.v20130815.orig.tar.gz
 ```
 
 * Extract tarball and clone this repo
